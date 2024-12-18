@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Trip</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top fw-bold shadow">
+      <div class="container d-flex justify-content-between">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo.png" alt="logo" />
+        </a>
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle btn border-black"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa-thin fa-user"></i> Musthofa
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="" class="dropdown-item">Profil</a></li>
+                  <li>
+                    <a href="riwayat.html" class="dropdown-item">Riwayat Transaksi</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="../index.html" class="dropdown-item">Log Out</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero fw-bold">
+      <h1>Cari Destinasi</h1>
+      <p
+        style="color: rgb(102, 0, 255)"
+        class="bg-light-subtle d-none d-md-block mx-auto px-2"
+      >
+        Discover the beauty of the world and plan your next adventure.
+      </p>
+      <div class="mx-auto container d-block d-md-none">
+        <p style="color: rgb(102, 0, 255)" class="bg-light-subtle mx-auto px-2">
+          Discover the beauty of the world and plan your next adventure.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="destinasi">
+      <div class="container my-5">
+        <h2 class="section-title">Destinasi</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card shadow">
+              <img src="../img/bromo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-center">Gunung Bromo</h4>
+                <div class="d-flex justify-content-between p-0 m-0">
+                  <p>Rp 100.000</p>
+                  <p>Jawa Timur <i class="fa-regular fa-location-dot"></i></p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                  <a
+                    href="#pesan"
+                    class="btn btn-warning border-black"
+                    data-bs-toggle="modal"
+                    >Pesan</a
+                  >
+                  <a
+                    href="#detail"
+                    class="btn btn-info border-black"
+                    data-bs-toggle="modal"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="../img/candi-prambanan.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-center">Candi Prambanan</h4>
+                <div class="d-flex justify-content-between p-0 m-0">
+                  <p>Rp 100.000</p>
+                  <p>Yogyakarta <i class="fa-regular fa-location-dot"></i></p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                  <a
+                    href="#pesan"
+                    class="btn btn-warning border-black"
+                    data-bs-toggle="modal"
+                    >Pesan</a
+                  >
+                  <a
+                    href="#detail"
+                    class="btn btn-info border-black"
+                    data-bs-toggle="modal"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="../img/bali.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-center">Pura Ulun Danu</h4>
+                <div class="d-flex justify-content-between p-0 m-0">
+                  <p>Rp 1.000.000</p>
+                  <p>Bali <i class="fa-regular fa-location-dot"></i></p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                  <a
+                    href="#pesan"
+                    class="btn btn-warning border-black"
+                    data-bs-toggle="modal"
+                    >Pesan</a
+                  >
+                  <a
+                    href="#detail"
+                    class="btn btn-info border-black"
+                    data-bs-toggle="modal"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="../img/dieng.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h4 class="card-title fw-bold text-center">Dieng</h4>
+                <div class="d-flex justify-content-between p-0 m-0">
+                  <p>Rp 100.000</p>
+                  <p>Magelang <i class="fa-regular fa-location-dot"></i></p>
+                </div>
+                <div class="d-flex justify-content-between mx-4">
+                  <a
+                    href="#pesan"
+                    class="btn btn-warning border-black"
+                    data-bs-toggle="modal"
+                    >Pesan</a
+                  >
+                  <a
+                    href="#detail"
+                    class="btn btn-info border-black"
+                    data-bs-toggle="modal"
+                    >Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section About Us -->
+    <section id="about" class="container-fluid my-5 pt-5">
+      <h2 class="section-title">About Us</h2>
+      <div class="d-flex justify-content-center shadow">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 fs-5 text-center">
+            <p>
+              Go-Trip adalah platform pemesanan tiket bioskop online yang
+              dirancang untuk memberikan kemudahan dan kenyamanan bagi para
+              pencinta film. Dengan akses cepat ke jadwal tayang terbaru,
+              pilihan bioskop, dan kemudahan dalam memilih kursi, kami
+              memastikan pengalaman menonton Anda menjadi lebih praktis dan
+              efisien.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="../img/about.jpeg"
+              class="w-100"
+              style="max-height: 25rem"
+              alt="Ilustrasi"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISI MISI -->
+    <h2 class="fw-bold text-center my-5">VISI & MISI</h2>
+    <section class="container-fluid d-flex text-center mb-5 fs-5">
+      <div class="d-flex shadow mx-2 container-fluid">
+        <div class="row">
+          <div
+            class="col-12 col-md-6 py-4"
+            style="background-color: rgb(209, 209, 209)"
+          >
+            <h3 class="fw-bold mb-2">VISI</h3>
+            <p>
+              Kami percaya bahwa setiap orang berhak untuk menjelajahi dunia dan
+              menciptakan kenangan yang berharga. Visi kami adalah untuk menjadi
+              mitra perjalanan Anda yang terpercaya, memberikan informasi,
+              inspirasi, dan layanan terbaik untuk membantu Anda meraih impian
+              perjalanan Anda.
+            </p>
+          </div>
+          <div class="py-4 col-12 col-md-6">
+            <h3 class="fw-bold mb-2">MISI</h3>
+            <p>
+              Misi kami adalah menyediakan berbagai pilihan paket perjalanan
+              yang sesuai dengan kebutuhan dan anggaran Anda. Dari liburan
+              santai di pantai hingga petualangan mendebarkan di pegunungan,
+              kami memiliki sesuatu untuk semua orang. Kami juga berkomitmen
+              untuk memberikan layanan pelanggan yang luar biasa, memastikan
+              bahwa setiap langkah perjalanan Anda berjalan lancar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Pesan -->
+    <div class="modal fade" id="pesan">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Detail Pesanan</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex">
+              <div class="row container-fluid">
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      src="../img/bromo.jpg"
+                      class="card-img-top card-img-bottom"
+                      alt="bromo"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-8">
+                  <table class="fw-semibold">
+                    <tr>
+                      <td>Nama Destinasi</td>
+                      <td class="pe-3">:</td>
+                      <td>Gunung Bromo</td>
+                    </tr>
+                    <tr>
+                      <td>Harga</td>
+                      <td>:</td>
+                      <td>Rp 100.000</td>
+                    </tr>
+                    <tr>
+                      <td>Jumlah Beli</td>
+                      <td>:</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="form-control w-25"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Total Harga</td>
+                      <td>:</td>
+                      <td>Rp 200.000</td>
+                    </tr>
+                    <tr>
+                      <td>Metode Pembayaran</td>
+                      <td>:</td>
+                      <td>
+                        <select class="form-select">
+                          <option value="" selected>Pilih Metode</option>
+                          <option value="">QRIS</option>
+                          <option value="">Transfer Bank</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="d-flex justify-content-end mx-4">
+                    <a
+                      href="#pembayaran"
+                      data-bs-toggle="modal"
+                      class="btn btn-warning"
+                      >Bayar</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Pembayaran -->
+    <div class="modal fade" id="pembayaran" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="m-0">Detail Pembayaran</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <p
+                class="fw-semibold shadow w-100 text-center rounded-2 text-danger fst-italic"
+              >
+                Berakhir dalam: <span id="countdown"></span>
+              </p>
+              <h3 class="fw-bold mb-2">QRIS</h3>
+              <img src="../img/qris.png" class="w-50" alt="qris" />
+              <div class="container-fluid">
+                <h4 class="fw-semibold mt-3 text-center">Rp 200.000 ,-</h4>
+                <p class="mb-0">
+                  <a
+                    href="#tutorial"
+                    class="text-decoration-none"
+                    data-bs-toggle="collapse"
+                    >Cara bayar <i class="fa-sharp fa-solid fa-caret-down"></i
+                  ></a>
+                </p>
+                <div class="collapse" id="tutorial">
+                  <div class="card border-0 pt-2 bg-secondary-subtle">
+                    <ol>
+                      <li>
+                        Buka aplikasi yang mendukung pembayaran dengan QRIS.
+                      </li>
+                      <li>
+                        <strong>Download</strong> atau
+                        <strong>pindai QRIS</strong> pada layar.
+                      </li>
+                      <li>Masukkan nominal sesuai tagihan.</li>
+                      <li>Konfirmasi pembayaran pada aplikasi.</li>
+                      <li>Pembayaran berhasil.</li>
+                    </ol>
+                  </div>
+                </div>
+                <a
+                  href="../img/qris.png"
+                  class="btn border-black w-100 mt-3"
+                  download
+                  >Download QRIS</a
+                >
+                <a
+                  href="#success"
+                  class="btn btn-primary w-100 border-black mt-2"
+                  data-bs-toggle="modal"
+                  >Cek Status</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Sukses -->
+    <div class="modal fade" id="success" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div
+              class="d-flex justify-content-center flex-column align-items-center"
+            >
+              <h3
+                class="fw-bold text-center fst-italic mb-0"
+                style="letter-spacing: 0.2rem"
+              >
+                Sukses !!!
+              </h3>
+              <div class="text-success" style="font-size: 8rem">
+                <i class="fa-sharp fa-solid fa-shield-check"></i>
+              </div>
+              <div
+                class="d-flex fw-semibold text-secondary container-fluid gap-5"
+              >
+                <div class="w-50">
+                  <p class="mb-0">Nomor Pemesanan</p>
+                  <p class="text-dark">TRX-7454375</p>
+                </div>
+                <div class="w-50">
+                  <p class="mb-0">Metode Pembayaran</p>
+                  <p class="text-dark">QRIS</p>
+                </div>
+              </div>
+              <div
+                class="d-flex fw-semibold text-secondary container-fluid gap-5"
+              >
+                <div class="w-50">
+                  <p class="mb-0">Jumlah Bayar</p>
+                  <p class="text-dark">Rp 200.000</p>
+                </div>
+                <div class="w-50">
+                  <p class="mb-0">Waktu Pembayaran</p>
+                  <p class="text-dark">2024-12-17 23:16:34 WIB</p>
+                </div>
+              </div>
+              <p
+                class="m-0 fst-italic text-secondary text-center"
+                style="font-size: 0.7rem"
+              >
+                Terimakasih Sudah Menyelesaikan Pembayaran
+              </p>
+              <p
+                class="m-0 fst-italic text-secondary text-center"
+                style="font-size: 0.7rem"
+              >
+                Detail Tiket dapat dilihat di menu Riwayat Transaksi
+              </p>
+              <a
+                href=""
+                data-bs-dismiss="modal"
+                class="btn btn-primary w-100 border-black mt-2 fw-semibold"
+                >OKE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Detail -->
+    <div class="modal fade" id="detail">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Detail Destinasi</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex">
+              <div class="row container-fluid">
+                <div class="col-12 col-md-4">
+                  <div class="card">
+                    <img
+                      src="../img/bromo.jpg"
+                      class="card-img-top card-img-bottom"
+                      alt="bromo"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-8 fw-semibold">
+                  <h4 class="fw-bold text-center">Gunung Bromo</h4>
+                  <div class="w-100">
+                    <p style="text-align: justify;">Gunung Bromo adalah salah satu destinasi wisata paling terkenal di Indonesia, 
+                      terletak di Taman Nasional Bromo Tengger Semeru, Jawa Timur. Gunung ini dikenal 
+                      dengan pemandangan matahari terbit yang spektakuler dan lanskap vulkaniknya yang unik. 
+                      Kawasan ini merupakan tempat tinggal suku Tengger, yang memiliki adat dan budaya yang kental.</p>
+                      <table class="text-secondary align-items-start" style="font-size: 0.9rem">
+                        <tr>
+                          <td>Harga</td>
+                          <td>:</td>
+                          <td><span class="fw-bold text-dark">Rp 100.000</span>/tiket</td>
+                        </tr>
+                        <tr>
+                          <td>Include</td>
+                          <td>:</td>
+                          <td>Tiket Masuk, Transportasi</td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="d-flex justify-content-end gap-4 mx-2">
+                    <div class="d-flex align-items-center fw-bold">
+                      4,7 <span class="text-warning mx-1"><i class="fa-solid fa-star"></i></span>
+                      Rating <span class="text-secondary">(457)</span>
+                    </div>
+                    <a
+                      href="#pesan"
+                      data-bs-toggle="modal"
+                      class="btn btn-warning"
+                      >Pesan</a
+                    >
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Set target time (5 minutes from now)
+      const targetDate = new Date().getTime() + 5 * 60 * 1000; // 5 minutes in milliseconds
+
+      // Update countdown every 1 second
+      const interval = setInterval(function () {
+        // Get current date and time
+        const now = new Date().getTime();
+
+        // Calculate the time remaining
+        const distance = targetDate - now;
+
+        // Time calculations for minutes and seconds
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result
+        document.getElementById("countdown").innerHTML =
+          minutes + "m " + seconds + "s ";
+      });
+    </script>
+  </body>
+</html>

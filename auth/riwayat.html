@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Riwayat Transaksi</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top fw-bold shadow">
+      <div class="container d-flex justify-content-between">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo.png" alt="logo" />
+        </a>
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <li class="dropdown">
+                <a
+                  class="dropdown-toggle btn border-black"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fa-thin fa-user"></i> Musthofa
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="" class="dropdown-item">Profil</a></li>
+                  <li>
+                    <a href="riwayat.html" class="dropdown-item"
+                      >Riwayat Transaksi</a
+                    >
+                  </li>
+                  <hr />
+                  <li>
+                    <a href="../index.html" class="dropdown-item">Log Out</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid pt-3">
+      <h3 class="fw-bold">Riwayat Transaksi</h3>
+      <table class="container table table-responsive table-striped">
+        <thead>
+          <th>Kode Transaksi</th>
+          <th>Destinasi</th>
+          <th>Aksi</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TRX-7454375</td>
+            <td>Gunung Bromo</td>
+            <td>
+              <a href="#detail" data-bs-toggle="modal" class="btn btn-info"
+                >Detail</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modal Detail -->
+    <div class="modal fade" id="detail">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="m-0 fw-semibold">Detail TRX-7454375</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-secondary fw-semibold">
+            <div class="d-flex w-100">
+              <div class="w-50">
+                <table class="align-items-start">
+                  <tr class="align-top">
+                    <td>Nama Pelanggan</td>
+                    <td class="pe-2">:</td>
+                    <td>
+                      <div class="text-dark fw-bold fst-italic">Musthofa</div>
+                      <div class="fst-italic" style="font-size: 0.7rem">
+                        hannn@gmail.com
+                      </div>
+                      <div class="fst-italic" style="font-size: 0.7rem">
+                        087773549905
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-top">
+                    <td>Status Transaksi</td>
+                    <td class="pe-2">:</td>
+                    <td>
+                      <div class="text-dark fw-bold fst-italic">
+                        Sukses
+                        <span class="text-secondary fst-italic"
+                          >(Terbayar)</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-top">
+                    <td>Waktu Transaksi</td>
+                    <td class="pe-2">:</td>
+                    <td>
+                      <div class="text-dark fw-bold fst-italic">
+                        Senin, 16 Desember 2024
+                      </div>
+                      <div class="fst-italic" style="font-size: 0.9rem">
+                        23:16 WIB
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="w-50">
+                <table>
+                  <tr class="align-top">
+                    <td>Metode Pembayaran</td>
+                    <td class="pe-2">:</td>
+                    <td>
+                      <div class="text-dark fw-bold fst-italic">QRIS</div>
+                    </td>
+                  </tr>
+                  <tr class="align-top">
+                    <td>Total Harga</td>
+                    <td class="pe-2">:</td>
+                    <td>
+                      <div class="text-dark fw-bold fst-italic">Rp 200.000</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="container-fluid mt-5">
+              <table class="table table-responsive table-striped container border-black">
+                <thead>
+                  <th>Nama Destinasi</th>
+                  <th>Jumlah</th>
+                  <th>Benefit</th>
+                </thead>
+                <tbody>
+                  <tr class="text-secondary">
+                    <td>Gunung Bromo</td>
+                    <td>2 Tiket</td>
+                    <td>Transportasi, Tiket Masuk</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
